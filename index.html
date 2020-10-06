@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>PassGen</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <div class="container">
+         <h2 class="title">PassGen - Secured Password Generator Tool !</h2>
+         <div class="result">
+            <div class="result__title field-title">Generated Password</div>
+            <div class="pass_result" id="result"> </div>
+         </div>
+         <div class="length slider" data-min="4" data-max="32">
+            <div class="length__title field-title" data-length='0'>length:</div>
+            <input id="slider" type="range" min="4" max="32" value="16" />
+         </div>
+         <div class="settings">
+            <span class="settings__title field-title">Select settings :</span>
+            <div class="setting">
+               <input type="checkbox" id="uppercase" checked />
+               <label for="uppercase">Include Uppercase (A-Z)</label>
+            </div>
+            <div class="setting">
+               <input type="checkbox" id="lowercase" checked />
+               <label for="lowercase">Include Lowercase (a-z)</label>
+            </div>
+            <div class="setting">
+               <input type="checkbox" id="number" checked />
+               <label for="number">Include Digits (0-9)</label>
+            </div>
+            <div class="setting">
+               <input type="checkbox" id="symbol" />
+               <label for="symbol">Include Symbols (!-?)</label>
+            </div>
+         </div>
+         <button class="btn generate" id="generate">Generate Password</button>
+         <button class="btn generate" id="copy-btn">Copy Secured Password</button>
+         <br>
+         <br>
+         <div id="strength">
+            <span class="results" id="results">  </span>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
