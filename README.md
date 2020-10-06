@@ -1,4 +1,4 @@
-<h1 align="center">:memo: PassGen-Secured Password Generator Tool </h1>
+<h1 align="center">🔑 PassGen-Secured Password Generator Tool </h1>
 <div align="center">
 🌟 An easy-to-use , easy-to-generate , secured random password generator 🤩
 </div>
